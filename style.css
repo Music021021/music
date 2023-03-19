@@ -210,7 +210,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	height: 60vh;
-	width: 50vw;
+	width: 360px;
 	background-color: #232323;
 	color: #ddd;
 	border-radius: 15px;
@@ -283,6 +283,8 @@ body{
 }
 
 .player{
+	display: flex;
+	flex-direction: row;
 	margin-top: 10px;
 }
 
@@ -291,17 +293,15 @@ body{
 	cursor: pointer;
 }
 
-.botao-play{
+.botao-play, .botao-pause{
 	height: 45px;
 	width: 45px;
-	margin-bottom: -5px;
+	margin-top: -10px;
 	padding: 0 10px;
 }
 
 .botao-pause{
 	display: none;
-	height: 45px;
-	width: 45px;
 }
 
 .setas{
