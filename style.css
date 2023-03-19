@@ -204,47 +204,109 @@ body{
 
 /* S E T T I N G S */
 
-.main-settings{
+.mp3{
 	display: flex;
 	flex-direction: column;
-	height: 90vh;
-	width: 100vw;
-}
-
-.main-settings h1{
-	font-size: 22px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 100px;
-	margin-bottom: 50px;
-}
-
-.one{
-	border-top: 3px solid white;
-}
-
-.content-settings{
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	height: 100px;
-	width: 100vw;
-	background-color: #222;
-	border-bottom: 3px solid white;
-}
-
-.content-settings h1{
-	font-size: 20px;
+	height: 60vh;
+	width: 50vw;
+	background-color: #232323;
+	color: #ddd;
+	border-radius: 15px;
 	text-transform: uppercase;
 	text-align: center;
-	margin-top: 50px;
 }
 
-.content-settings audio{
-	width: 21px;
-	height: 20px;
-	margin-left: 20px;
+.mp3-position{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 70vh;
+}
+
+.mp3 img{
+	width: 270px;
+	height: 270px;
+	border-radius: 5px;
+}
+
+.descricao h2{
+	font-size: 22px;
+	margin-top: 10px;
+}
+
+.descricao i{
+	font-size: 16px;
+}
+
+.duracao{
+	margin-top: 15px;
+}
+
+.barra{
+	width: 250px;
+	height: 18px;
+	border: 1px solid white;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.barra progress{
+	width: 0%;
+	height: 16px;
+}
+
+::-webkit-progress-value{
+	background-color: gray;
+}
+
+::-webkit-progress-bar{
+	background-color: gray;
+}
+
+.ponto{
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	border-radius: 50%;
+	margin-left: -10px;
+}
+
+.tempo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.player{
+	margin-top: 10px;
+}
+
+.player ion-icon{
+	user-select: none;
+	cursor: pointer;
+}
+
+.botao-play{
+	height: 45px;
+	width: 45px;
+	margin-bottom: -5px;
+	padding: 0 10px;
+}
+
+.botao-pause{
+	display: none;
+	height: 45px;
+	width: 45px;
+}
+
+.setas{
+	height: 30px;
+	width: 30px;
 }
 
 /* F I M  D O  S E T T I N G S */
